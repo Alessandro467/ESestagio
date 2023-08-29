@@ -79,7 +79,7 @@ public class TelaMenu {
 		JMenuItem mntmRelatorios = new JMenuItem("Relatórios");
 		mntmRelatorios.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Relatorios tela = new Relatorios();
+				TelaLancarRelatorios tela = new TelaLancarRelatorios();
 				tela.setVisible(true);
 				desktopPane.add(tela);
 			}

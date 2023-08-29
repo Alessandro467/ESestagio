@@ -10,7 +10,7 @@ import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.Font;
 
-public class Relatorios extends JInternalFrame {
+public class TelaLancarRelatorios extends JInternalFrame {
 
 	/**
 	 * Launch the application.
@@ -19,7 +19,7 @@ public class Relatorios extends JInternalFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Relatorios frame = new Relatorios();
+					TelaLancarRelatorios frame = new TelaLancarRelatorios();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -31,7 +31,7 @@ public class Relatorios extends JInternalFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Relatorios() {
+	public TelaLancarRelatorios() {
 		setBounds(100, 100, 603, 361);
 		
 		JPanel panel = new JPanel();

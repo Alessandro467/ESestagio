@@ -69,7 +69,7 @@ public class TelaMenu {
 		JMenuItem mntmVagas = new JMenuItem("Vagas");
 		mntmVagas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Vagas tela = new Vagas();
+				TelaVagas tela = new TelaVagas();
 				tela.setVisible(true);
 				desktopPane.add(tela);
 			}

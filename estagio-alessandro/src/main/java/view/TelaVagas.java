@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 
-public class Vagas extends JInternalFrame {
+public class TelaVagas extends JInternalFrame {
 	private JTextField textField;
 
 	/**
@@ -20,7 +20,7 @@ public class Vagas extends JInternalFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Vagas frame = new Vagas();
+					TelaVagas frame = new TelaVagas();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -32,7 +32,7 @@ public class Vagas extends JInternalFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Vagas() {
+	public TelaVagas() {
 		setBounds(100, 100, 450, 300);
 		
 		JPanel panel = new JPanel();

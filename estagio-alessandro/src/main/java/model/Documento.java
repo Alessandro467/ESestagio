@@ -3,6 +3,7 @@ package model;
 import java.io.Serializable;
 import java.sql.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,7 +15,17 @@ public class Documento implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer codDoc;
+	@Column(name = "codDoc")
+	private Integer codigo;
+	/**
+	 * comentário prof. Bruno
+	 * Os nomes dos atributos precisam respeitar as regras da O.O
+	 * como não podem ficar iguais ao do banco de dados pode utilizar
+	 * a notação @Column inserido acima, veja que fiz modificações no atributo
+	 * o mesmo ocorre na classe Vaga
+	 */
+	
+	
 	private String tipoDoc;
 	private String tituloDoc;
 	private String dataDoc;
@@ -26,18 +37,18 @@ public Documento(){
 
 public Documento(Integer codDoc, String tipoDoc, String tituloDoc) {
 	super();
-	this.codDoc = codDoc;
+	this.codigo = codDoc;
 	this.tipoDoc = tipoDoc;
 	this.tituloDoc = tituloDoc;
 
 }
 
 public int getCodDoc() {
-	return codDoc;
+	return codigo;
 }
 
 public void setCodDoc(int codDoc) {
-	this.codDoc = codDoc;
+	this.codigo = codDoc;
 }
 
 public String getTipoDoc() {
